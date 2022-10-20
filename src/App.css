@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+.anime-list { 
+display: flex;
+list-style: none;
+
+
+}
+
+.anime-list img { 
+  max-width: 100%;
+}
+.anime-list li {
+  width: 100%;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
