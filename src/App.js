@@ -1,7 +1,8 @@
 import './App.css';
-import { SearchInput } from './SearchInput/SearchInput';
 import React, { useEffect } from 'react';
 import { Modal } from './Modal/Modal';
+import { Header } from './Components/Header';
+import { AnimesListados } from './Components/AnimesListados';
 
 const api = 'https://kitsu.io/api/edge/';
 
@@ -27,27 +28,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Animes</h1>
-      <SearchInput value={text} onChange={(search) => setText(search)} />
-      {info && (
-        <ul className="anime-list">
-          {info.map((anime) => (
-            <li
-              key={anime.id}
-              onClick={() => {
-                setisModalVisible(true);
-                setSelectedAnime(anime.id);
-              }}
-            >
-              <img
-                src={anime.attributes.posterImage.small}
-                alt={anime.attributes.canonicalTitle}
-              />
-              {anime.attributes.canonicalTitle}
-            </li>
-          ))}
-        </ul>
-      )}
+      <Header text={text} setText={setText} />
+      <AnimesListados
+        info={info}
+        setisModalVisible={setisModalVisible}
+        setSelectedAnime={setSelectedAnime}
+      />
       {isModalVisible ? (
         <Modal
           selectedAnime={selectedAnime}

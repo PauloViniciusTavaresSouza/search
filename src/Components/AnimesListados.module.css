@@ -1,0 +1,150 @@
+.containerPrincipal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container { 
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container ul { 
+  padding: 0;
+  margin: 0;
+}
+
+.animeList { 
+  display: flex;
+  flex-wrap: wrap;
+  
+  }
+
+.animeList img { 
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animeList li {
+  background: #FAFAFA;
+  padding: 5px;
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+  /* justify-content: center; */
+  align-self: center;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #eee;
+}
+
+.animeList h1 { 
+  font-size: 13px;
+  font-weight: 500;
+  text-align: start;
+}
+.animeList button { 
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 10px 40px;
+  margin: 30px 0 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #fea;
+  border: 1px solid #fb1;
+  border-color: #fb1;
+  color: #fb1;
+}
+
+.animeListMobile { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.animeListMobile img { 
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animeListMobile li {
+  background: #FAFAFA;
+  padding: 5px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #eee;
+}
+
+.animeListMobile h1 { 
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.animeListMobile button { 
+  padding: 10px 80px;
+  margin: 30px 0 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #fea;
+  border: 1px solid #fb1;
+  border-color: #fb1;
+  color: #fb1;
+}
+
+
+
+.animeListMobileMicro { 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.animeListMobileMicro img { 
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animeListMobileMicro li {
+  background: #FAFAFA;
+  padding: 5px;
+  width: 80vw;
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #eee;
+}
+
+.animeListMobileMicro h1 { 
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.animeListMobileMicro button { 
+  padding: 10px 80px;
+  margin: 30px 0 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #fea;
+  border: 1px solid #fb1;
+  border-color: #fb1;
+  color: #fb1;
+}

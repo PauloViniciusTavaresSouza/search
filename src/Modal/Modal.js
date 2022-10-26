@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import style from './Modal.module.css';
 
 const api = 'https://kitsu.io/api/edge/anime';
 
@@ -22,18 +23,21 @@ export const Modal = ({ selectedAnime, setisModalVisible }) => {
   return (
     <>
       {currentAnime ? (
-        <div onClick={handleOutsideClick} className="containerModal-master">
-          <div className="container-modal">
-            <div className="posterImage">
+        <div
+          onClick={handleOutsideClick}
+          className={style.containerModalMaster}
+        >
+          <div className={style.containerModal}>
+            <div className={style.posterImage}>
               <img src={currentAnime.attributes.posterImage.original} />
             </div>
-            <div className="conteudo">
+            <div className={style.conteudo}>
               <h1>{currentAnime.attributes.canonicalTitle}</h1>
               <p>{currentAnime.attributes.description}</p>
               <button>Assistir</button>
             </div>
-            <div className="sairModal">
-              <button onClick={handleOutsideClick}>X</button>
+            <div className={style.sairModal}>
+              <button onClick={handleOutsideClick}></button>
             </div>
           </div>
         </div>
