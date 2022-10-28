@@ -1,6 +1,7 @@
 import React from 'react';
-import { useMedia } from '../Hooks/useMedia';
-import useDebounce from '../useDebounce';
+import { useMedia } from '../../Hooks/useMedia';
+
+import useDebounce from '../../useDebounce';
 import style from './SearchInput.module.css';
 
 export const SearchInput = ({ value, onChange }) => {

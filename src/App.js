@@ -1,8 +1,9 @@
 import './App.css';
 import React, { useEffect } from 'react';
-import { Modal } from './Modal/Modal';
+import { Modal } from './Components/Modal/Modal';
 import { Header } from './Components/Header';
 import { AnimesListados } from './Components/AnimesListados';
+import { Login } from './Components/Login/Login';
 
 const api = 'https://kitsu.io/api/edge/';
 
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Header text={text} setText={setText} />
+      <Login />
       <AnimesListados
         info={info}
         setisModalVisible={setisModalVisible}
