@@ -54,9 +54,8 @@ export const Form = () => {
   //   console.log(key);
   // });
 
-  Object.entries(cursoo).forEach((entry) => {
-    const [key, value] = entry;
-    console.log(key, value);
+  Object.keys(cursoo).forEach((key) => {
+    console.log(key);
   });
   // PROFISSÕES DE SAUDE
   let saude = ['SELECIONE', 'MEDICINA', 'ODONTOLOGIA', 'VETERINARIO'];

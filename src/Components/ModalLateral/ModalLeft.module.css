@@ -3,8 +3,37 @@
   width: 200px;
   height: 100vh;
   background: blue;
-  position: fixed;
   top: 0;
   left: 0;
+  animation: abrirLeft 1s;
+}
 
+
+.ativo {
+  width: 80px;
+  height: 100vh;
+  background: #22242A;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #FFBB11;
+  display: block;
+  animation: fecharRight 1s;
+  
+}
+
+@keyframes abrirLeft {
+  0% {
+    width:80px ;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@keyframes fecharRight {
+  0% {
+    width:200px ;
+  }
+  100% {
+    width: 80px;
+  }
 }
