@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './UserHeaderNav.module.css';
-import { useMedia } from '../Hooks/useMedia';
+import { useMedia } from '../../Hooks/useMedia';
+import { Link } from 'react-router-dom';
 
 export const UserHeaderNav = () => {
   const mobile = useMedia('(max-width:1000px)');
@@ -13,12 +14,8 @@ export const UserHeaderNav = () => {
           mobileMenu && style.listaMobileActive
         }`}
       >
-        <li>
-          <a href="#">Wishlist</a>
-        </li>
-        <li>
-          <a href="#">Filmes</a>
-        </li>
+        <Link to="/form">Formulário</Link>
+        <Link to="/filme">Filmes</Link>
       </nav>
       {mobile && (
         <button

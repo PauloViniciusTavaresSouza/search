@@ -8,6 +8,7 @@ export const SearchInput = ({ value, onChange }) => {
   const [displayValue, setDisplayValue] = React.useState(value);
   const mobileMicro = useMedia('(max-width:375px)');
   const debouncedChange = useDebounce(onChange, 500);
+  console.log(displayValue);
 
   function handleChange(event) {
     setDisplayValue(event.target.value);

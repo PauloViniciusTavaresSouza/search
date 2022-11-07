@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './AnimesListados.module.css';
-import { useMedia } from '../Hooks/useMedia';
+import { useMedia } from '../../Hooks/useMedia';
 
 export const AnimesListados = ({
   info,

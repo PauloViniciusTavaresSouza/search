@@ -29,7 +29,10 @@ export const Modal = ({ selectedAnime, setisModalVisible }) => {
         >
           <div className={style.containerModal}>
             <div className={style.posterImage}>
-              <img src={currentAnime.attributes.posterImage.original} />
+              <img
+                src={currentAnime.attributes.posterImage.original}
+                alt={currentAnime.attributes.canonicalTitle}
+              />
             </div>
             <div className={style.conteudo}>
               <h1>{currentAnime.attributes.canonicalTitle}</h1>

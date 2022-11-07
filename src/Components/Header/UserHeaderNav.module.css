@@ -44,7 +44,7 @@
   padding: 5px;
 
 }
-.lista li {
+.lista a {
   margin: 5px;
   padding: 10px 15px;
   border-radius: 3px;
@@ -73,7 +73,7 @@
   pointer-events: none;
 }
 
-.listaMobile li, .listaMobile button {
+.listaMobile a, .listaMobile button {
   display: flex;
   align-items: center;
   background: none;
